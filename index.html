@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emihan's VIP Dark Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #fff;
+        }
+
+        /* Welcome Screen */
+        #welcome-screen {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            text-align: center;
+        }
+
+        #welcome-screen h1 {
+            font-size: 3rem;
+            color: #ff4500;
+            animation: glow 2s infinite alternate;
+        }
+
+        #welcome-screen p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        #welcome-screen button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: glow 2s infinite alternate;
+        }
+
+        #welcome-screen button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Keyframes for glow animation */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
+            }
+            100% {
+                text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+            }
+        }
+
+        /* Main Section */
+        #main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .command-box {
+            background: #1c1f24;
+            border: 2px solid #007bff;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            margin: 20px auto;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: glowButton 2s infinite alternate;
+        }
+
+        .command-box:hover {
+            background: #007bff;
+            color: #fff;
+        }
+
+        @keyframes glowButton {
+            0% {
+                box-shadow: 0 0 10px red, 0 0 20px blue, 0 0 30px green;
+            }
+            100% {
+                box-shadow: 0 0 20px green, 0 0 30px red, 0 0 40px blue;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+        <h1>Welcome to Emihan's VIP Dark Web</h1>
+        <p>Here is our official website. Follow our channel for more updates!</p>
+        <button onclick="document.getElementById('welcome-screen').style.display='none'; document.getElementById('main-content').style.display='block';">
+            Enter Website
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <a href="https://github.com/TechnicalMujeeb/HeartBleed" target="_blank" class="command-box">
+            HeartBleed Scanner
+        </a>
+        <a href="https://github.com/Bhai4You/Ip-Attack" target="_blank" class="command-box">
+            IP or Domain Attacking Tool
+        </a>
+        <a href="https://github.com/UndeadSec/checkURL" target="_blank" class="command-box">
+            Detect Phishing URL
+        </a>
+        <a href="https://github.com/f4rih/websploit" target="_blank" class="command-box">
+            MITM Attack Tool
+        </a>
+        <a href="https://github.com/bahaabdelwahed/killshot" target="_blank" class="command-box">
+            Killshot Pentesting Framework
+        </a>
+        <a href="https://github.com/UndeadSec/EvilURL" target="_blank" class="command-box">
+            IDN Homograph Attack Tool
+        </a>
+        <a href="https://github.com/arjunrajp/toxicipHack" target="_blank" class="command-box">
+            IP/Number to Location Hack
+        </a>
+        <div class="footer">EMMY HENZ TECH</div>
+    </div>
+</body>
+</html>
