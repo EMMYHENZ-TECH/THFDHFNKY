@@ -11,18 +11,8 @@
             font-family: Arial, sans-serif;
             color: white;
             text-align: center;
-            overflow: hidden; /* Prevents scrolling */
-        }
-
-        /* Video Background */
-        video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures the video covers the screen */
-            z-index: -1; /* Sends the video to the background */
+            background: url('your-background-url-here') no-repeat center center fixed;
+            background-size: cover; /* Adjusts the image to cover the entire screen */
         }
 
         /* TV Screen */
@@ -99,12 +89,6 @@
     </style>
 </head>
 <body>
-    <!-- Video Background -->
-    <video autoplay muted loop>
-        <source src="./emmymedia/video/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
     <!-- TV Screen -->
     <div class="tv">
         <div class="tv-screen">Welcome to EMMY HENZ Official Site</div>
